@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitudes recibidas | AMAC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:wght@700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <a class="encabezado__logo" href="index.html">
+        <img src="img/logo-amac.svg" alt="AMAC, ir al inicio" width="200" height="48">
+      </a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul class="navegacion__lista">
+          <li><a class="navegacion__enlace" href="index.html">Vacantes</a></li>
+          <li><a class="navegacion__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a class="navegacion__enlace" href="empresa-vacantes.html">Empresas</a></li>
+          <li><a class="boton boton--claro" href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal" class="contenedor">
+    <a class="enlace-volver" href="empresa-vacantes.html"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg> Mis vacantes</a>
+    <h1>Solicitudes recibidas</h1>
+    <p class="subtitulo">Conoce a las personas interesadas en tus vacantes.</p>
+
+    <form class="filtros" action="solicitudes-recibidas.html" method="get">
+            <div class="campo-formulario">
+              <label for="vacante">Vacante</label>
+              <select id="vacante" name="vacante">
+                <option value="">Recepcionista</option>
+                <option>Auxiliar administrativo</option>
+                <option>Asistente de ventas</option>
+              </select>
+            </div>
+            <div class="campo-formulario">
+              <label for="estado">Filtrar por estado</label>
+              <select id="estado" name="estado">
+                <option value="">Todos los estados</option>
+                <option>En revisión</option>
+                <option>Aceptada</option>
+                <option>Rechazada</option>
+                <option>Pendiente</option>
+              </select>
+            </div>
+    </form>
+
+    <section aria-labelledby="titulo-candidatos">
+      <div class="encabezado-seccion">
+        <h2 id="titulo-candidatos">Candidatos para Recepcionista</h2>
+        <p>3 solicitudes</p>
+      </div>
+      <ul class="lista-candidatos">
+        <li>
+          <article class="candidato">
+            <div class="candidato__encabezado">
+              <span class="avatar"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></span>
+              <div>
+                <h3 class="candidato__nombre">María González</h3>
+                <span class="etiqueta-estatus etiqueta-estatus--revision">En revisión</span>
+              </div>
+            </div>
+            <p>Edad: 62 años</p>
+            <p class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span>Vive en Monterrey</span></p>
+            <p class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg><span>Experiencia: 15 años en atención al cliente</span></p>
+            <p class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg><span>Contacto preferido: Teléfono</span></p>
+            <div class="candidato__acciones">
+              <button class="boton boton--oscuro" type="button">Ver perfil y CV <span class="solo-lector">de María González</span></button>
+              <button class="boton boton--secundario" type="button">Cambiar estatus <span class="solo-lector">de María González</span></button>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="candidato">
+            <div class="candidato__encabezado">
+              <span class="avatar"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></span>
+              <div>
+                <h3 class="candidato__nombre">José Martínez</h3>
+                <span class="etiqueta-estatus etiqueta-estatus--aceptada">Aceptada</span>
+              </div>
+            </div>
+            <p>Edad: 58 años</p>
+            <p class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span>Vive en San Nicolás</span></p>
+            <p class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg><span>Experiencia: 20 años como auxiliar contable</span></p>
+            <p class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg><span>Contacto preferido: Correo electrónico</span></p>
+            <div class="candidato__acciones">
+              <button class="boton boton--oscuro" type="button">Ver perfil y CV <span class="solo-lector">de José Martínez</span></button>
+              <button class="boton boton--secundario" type="button">Cambiar estatus <span class="solo-lector">de José Martínez</span></button>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="candidato">
+            <div class="candidato__encabezado">
+              <span class="avatar"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg></span>
+              <div>
+                <h3 class="candidato__nombre">Ana Rodríguez</h3>
+                <span class="etiqueta-estatus etiqueta-estatus--pendiente">Pendiente</span>
+              </div>
+            </div>
+            <p>Edad: 65 años</p>
+            <p class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span>Vive en Guadalupe</span></p>
+            <p class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg><span>Experiencia: 10 años en ventas</span></p>
+            <p class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg><span>Contacto preferido: Teléfono</span></p>
+            <div class="candidato__acciones">
+              <button class="boton boton--oscuro" type="button">Ver perfil y CV <span class="solo-lector">de Ana Rodríguez</span></button>
+              <button class="boton boton--secundario" type="button">Cambiar estatus <span class="solo-lector">de Ana Rodríguez</span></button>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__contenido">
+      <div>
+        <p class="pie__titulo">¿Necesitas ayuda?</p>
+        <p class="pie__texto">
+          Llámanos al <a class="pie__telefono" href="tel:+528112345678">81 1234 5678</a>,
+          de lunes a viernes de 9:00 a 18:00.
+        </p>
+      </div>
+      <p class="pie__texto">AMAC · Acompañamos nuevas etapas de vida.</p>
+    </div>
+    <a class="boton-ayuda" href="tel:+528112345678">
+      <svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
+      Ayuda <span class="solo-lector">: llamar a AMAC</span>
+    </a>
+  </footer>
+</body>
+</html>
