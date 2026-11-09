@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada | AMAC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:wght@700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <a class="encabezado__logo" href="index.html">
+        <img src="img/logo-amac.svg" alt="AMAC, ir al inicio" width="200" height="48">
+      </a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul class="navegacion__lista">
+          <li><a class="navegacion__enlace" href="index.html">Vacantes</a></li>
+          <li><a class="navegacion__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a class="navegacion__enlace" href="empresa-vacantes.html">Empresas</a></li>
+          <li><a class="boton boton--claro" href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal" class="contenedor">
+    <div class="pagina-error">
+      <p class="pagina-error__codigo" aria-hidden="true">404</p>
+      <h1>No encontramos esta página</h1>
+      <p class="subtitulo">Es posible que la dirección esté mal escrita o que la página ya no exista.</p>
+      <div class="grupo-botones">
+        <a class="boton boton--primario" href="index.html">Ir a las vacantes</a>
+        <a class="boton boton--secundario" href="tel:+528112345678">Llamar a AMAC</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__contenido">
+      <div>
+        <p class="pie__titulo">¿Necesitas ayuda?</p>
+        <p class="pie__texto">
+          Llámanos al <a class="pie__telefono" href="tel:+528112345678">81 1234 5678</a>,
+          de lunes a viernes de 9:00 a 18:00.
+        </p>
+      </div>
+      <p class="pie__texto">AMAC · Acompañamos nuevas etapas de vida.</p>
+    </div>
+    <a class="boton-ayuda" href="tel:+528112345678">
+      <svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
+      Ayuda <span class="solo-lector">: llamar a AMAC</span>
+    </a>
+  </footer>
+</body>
+</html>
