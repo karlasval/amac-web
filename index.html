@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacantes disponibles | AMAC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:wght@700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <a class="encabezado__logo" href="index.html">
+        <img src="img/logo-amac.svg" alt="AMAC, ir al inicio" width="200" height="48">
+      </a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul class="navegacion__lista">
+          <li><a class="navegacion__enlace" href="index.html" aria-current="page">Vacantes</a></li>
+          <li><a class="navegacion__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a class="navegacion__enlace" href="empresa-vacantes.html">Empresas</a></li>
+          <li><a class="boton boton--claro" href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal" class="contenedor">
+    <h1>Encuentra tu próximo empleo</h1>
+    <p class="subtitulo">Descubre oportunidades laborales pensadas para ti.</p>
+
+    <section class="tarjeta buscador" aria-labelledby="titulo-buscador">
+      <h2 id="titulo-buscador">¿Qué trabajo buscas?</h2>
+      <form action="index.html" method="get" role="search">
+        <div class="buscador__campos">
+            <div class="campo-formulario">
+              <label for="buscar">Puesto, empresa o ubicación</label>
+              <input type="search" id="buscar" name="buscar">
+            </div>
+            <div class="campo-formulario">
+              <label for="categoria">Categoría</label>
+              <select id="categoria" name="categoria">
+                <option value="">Todas</option>
+                <option>Administración</option>
+                <option>Atención al cliente</option>
+                <option>Ventas</option>
+                <option>Servicios</option>
+              </select>
+            </div>
+            <div class="campo-formulario">
+              <label for="horario">Horario</label>
+              <select id="horario" name="horario">
+                <option value="">Todos</option>
+                <option>Tiempo completo</option>
+                <option>Medio tiempo</option>
+                <option>Por horas</option>
+              </select>
+            </div>
+        </div>
+        <div class="buscador__acciones">
+          <button class="boton boton--primario" type="submit"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg> Buscar vacantes</button>
+          <a class="boton boton--enlace" href="index.html">Limpiar filtros</a>
+        </div>
+      </form>
+    </section>
+
+    <section aria-labelledby="titulo-vacantes">
+      <div class="encabezado-seccion">
+        <h2 id="titulo-vacantes">Vacantes disponibles</h2>
+        <p>6 vacantes encontradas</p>
+      </div>
+      <ul class="lista-vacantes">
+        <li>
+          <article class="tarjeta-vacante">
+            <h3 class="tarjeta-vacante__titulo">Recepcionista</h3>
+            <p class="tarjeta-vacante__empresa">Empresa: Ejemplo Servicios</p>
+            <ul class="tarjeta-vacante__datos">
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span><span class="solo-lector">Ubicación: </span>Monterrey, Nuevo León</span></li>
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg><span><span class="solo-lector">Sueldo: </span>$10,000 - $12,000 mensuales</span></li>
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 11H8v-2h3V6h2v7z"/></svg><span><span class="solo-lector">Horario: </span>Tiempo completo</span></li>
+            </ul>
+            <p class="tarjeta-vacante__fecha">Publicado recientemente</p>
+            <a class="boton boton--oscuro" href="vacante.html">Ver vacante <span class="solo-lector">de Recepcionista</span></a>
+          </article>
+        </li>
+        <li>
+          <article class="tarjeta-vacante">
+            <h3 class="tarjeta-vacante__titulo">Auxiliar administrativo</h3>
+            <p class="tarjeta-vacante__empresa">Empresa: Servicios del Norte</p>
+            <ul class="tarjeta-vacante__datos">
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span><span class="solo-lector">Ubicación: </span>San Nicolás, Nuevo León</span></li>
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg><span><span class="solo-lector">Sueldo: </span>$9,000 - $11,000 mensuales</span></li>
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 11H8v-2h3V6h2v7z"/></svg><span><span class="solo-lector">Horario: </span>Medio tiempo</span></li>
+            </ul>
+            <p class="tarjeta-vacante__fecha">Publicado recientemente</p>
+            <a class="boton boton--oscuro" href="vacante.html">Ver vacante <span class="solo-lector">de Auxiliar administrativo</span></a>
+          </article>
+        </li>
+        <li>
+          <article class="tarjeta-vacante">
+            <h3 class="tarjeta-vacante__titulo">Asistente de ventas</h3>
+            <p class="tarjeta-vacante__empresa">Empresa: Comercial Monterrey</p>
+            <ul class="tarjeta-vacante__datos">
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span><span class="solo-lector">Ubicación: </span>Monterrey, Nuevo León</span></li>
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg><span><span class="solo-lector">Sueldo: </span>$8,500 - $10,000 mensuales</span></li>
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 11H8v-2h3V6h2v7z"/></svg><span><span class="solo-lector">Horario: </span>Tiempo completo</span></li>
+            </ul>
+            <p class="tarjeta-vacante__fecha">Publicado recientemente</p>
+            <a class="boton boton--oscuro" href="vacante.html">Ver vacante <span class="solo-lector">de Asistente de ventas</span></a>
+          </article>
+        </li>
+        <li>
+          <article class="tarjeta-vacante">
+            <h3 class="tarjeta-vacante__titulo">Cajero(a)</h3>
+            <p class="tarjeta-vacante__empresa">Empresa: Tiendas La Esquina</p>
+            <ul class="tarjeta-vacante__datos">
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span><span class="solo-lector">Ubicación: </span>Guadalupe, Nuevo León</span></li>
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg><span><span class="solo-lector">Sueldo: </span>$8,000 - $9,500 mensuales</span></li>
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 11H8v-2h3V6h2v7z"/></svg><span><span class="solo-lector">Horario: </span>Medio tiempo</span></li>
+            </ul>
+            <p class="tarjeta-vacante__fecha">Publicado recientemente</p>
+            <a class="boton boton--oscuro" href="vacante.html">Ver vacante <span class="solo-lector">de Cajero(a)</span></a>
+          </article>
+        </li>
+        <li>
+          <article class="tarjeta-vacante">
+            <h3 class="tarjeta-vacante__titulo">Asesor(a) telefónico</h3>
+            <p class="tarjeta-vacante__empresa">Empresa: Contacto Norte</p>
+            <ul class="tarjeta-vacante__datos">
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span><span class="solo-lector">Ubicación: </span>Monterrey, Nuevo León</span></li>
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg><span><span class="solo-lector">Sueldo: </span>$9,500 - $11,000 mensuales</span></li>
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 11H8v-2h3V6h2v7z"/></svg><span><span class="solo-lector">Horario: </span>Tiempo completo</span></li>
+            </ul>
+            <p class="tarjeta-vacante__fecha">Publicado recientemente</p>
+            <a class="boton boton--oscuro" href="vacante.html">Ver vacante <span class="solo-lector">de Asesor(a) telefónico</span></a>
+          </article>
+        </li>
+        <li>
+          <article class="tarjeta-vacante">
+            <h3 class="tarjeta-vacante__titulo">Encargado(a) de archivo</h3>
+            <p class="tarjeta-vacante__empresa">Empresa: Despacho Garza y Asociados</p>
+            <ul class="tarjeta-vacante__datos">
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span><span class="solo-lector">Ubicación: </span>San Pedro Garza García, Nuevo León</span></li>
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg><span><span class="solo-lector">Sueldo: </span>$9,000 - $10,500 mensuales</span></li>
+              <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 11H8v-2h3V6h2v7z"/></svg><span><span class="solo-lector">Horario: </span>Medio tiempo</span></li>
+            </ul>
+            <p class="tarjeta-vacante__fecha">Publicado recientemente</p>
+            <a class="boton boton--oscuro" href="vacante.html">Ver vacante <span class="solo-lector">de Encargado(a) de archivo</span></a>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__contenido">
+      <div>
+        <p class="pie__titulo">¿Necesitas ayuda?</p>
+        <p class="pie__texto">
+          Llámanos al <a class="pie__telefono" href="tel:+528112345678">81 1234 5678</a>,
+          de lunes a viernes de 9:00 a 18:00.
+        </p>
+      </div>
+      <p class="pie__texto">AMAC · Acompañamos nuevas etapas de vida.</p>
+    </div>
+    <a class="boton-ayuda" href="tel:+528112345678">
+      <svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
+      Ayuda <span class="solo-lector">: llamar a AMAC</span>
+    </a>
+  </footer>
+</body>
+</html>

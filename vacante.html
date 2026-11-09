@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recepcionista | AMAC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:wght@700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <a class="encabezado__logo" href="index.html">
+        <img src="img/logo-amac.svg" alt="AMAC, ir al inicio" width="200" height="48">
+      </a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul class="navegacion__lista">
+          <li><a class="navegacion__enlace" href="index.html">Vacantes</a></li>
+          <li><a class="navegacion__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a class="navegacion__enlace" href="empresa-vacantes.html">Empresas</a></li>
+          <li><a class="boton boton--claro" href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal" class="contenedor">
+    <a class="enlace-volver" href="index.html"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg> Volver a vacantes</a>
+
+    <div class="columnas">
+      <div class="pila">
+        <article class="tarjeta" aria-labelledby="titulo-vacante">
+          <div class="vacante-encabezado">
+            <div>
+              <p class="etiqueta-seccion">Vacante</p>
+              <h1 id="titulo-vacante">Recepcionista</h1>
+              <p class="subtitulo">Ejemplo Servicios</p>
+            </div>
+            <a class="enlace-alerta" href="#reportar"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg> Reportar vacante</a>
+          </div>
+          <hr class="divisor">
+          <h2>Información del empleo</h2>
+          <ul class="lista-datos">
+            <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span><span class="solo-lector">Ubicación: </span>Monterrey, Nuevo León</span></li>
+            <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg><span><span class="solo-lector">Sueldo: </span>$10,000 - $12,000 mensuales</span></li>
+            <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 11H8v-2h3V6h2v7z"/></svg><span><span class="solo-lector">Horario: </span>Tiempo completo, lunes a viernes</span></li>
+            <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg><span><span class="solo-lector">Categoría: </span>Administración y atención al cliente</span></li>
+          </ul>
+          <a class="boton boton--primario" href="confirmacion.html">Postularme</a>
+        </article>
+
+        <section class="tarjeta tarjeta--destacada" aria-labelledby="titulo-telefono">
+          <h2 id="titulo-telefono">Postulación por teléfono</h2>
+          <p>Esta empresa también recibe postulaciones por teléfono.</p>
+          <p class="dato telefono-destacado"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg><span>81 2345 6789</span></p>
+          <a class="boton boton--oscuro" href="tel:+528123456789"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg> Llamar a la empresa</a>
+        </section>
+
+        <section class="tarjeta" aria-labelledby="titulo-descripcion">
+          <h2 id="titulo-descripcion">Descripción del puesto</h2>
+          <p>Buscamos una persona responsable y organizada para atender clientes, contestar llamadas y apoyar en actividades administrativas.</p>
+          <h2>Requisitos</h2>
+          <ul class="lista-datos">
+            <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Buena comunicación y trato amable.</span></li>
+            <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Conocimientos básicos de computadora.</span></li>
+            <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Experiencia en atención al cliente (deseable).</span></li>
+          </ul>
+          <h2>Prestaciones</h2>
+          <ul class="lista-datos">
+            <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Prestaciones de ley.</span></li>
+            <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Vales de despensa.</span></li>
+            <li class="dato"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span>Horario fijo sin fines de semana.</span></li>
+          </ul>
+        </section>
+      </div>
+
+      <aside class="tarjeta tarjeta--suave" aria-labelledby="titulo-empresa">
+        <h2 id="titulo-empresa">Sobre la empresa</h2>
+        <h3>Ejemplo Servicios</h3>
+        <p>Empresa dedicada a ofrecer servicios administrativos y atención al cliente en Monterrey, Nuevo León.</p>
+        <hr class="divisor">
+        <h3>Información general</h3>
+        <ul>
+          <li><strong>Giro:</strong> Servicios administrativos.</li>
+          <li><strong>Horario:</strong> Lunes a viernes.</li>
+          <li><strong>Modalidad:</strong> Presencial.</li>
+        </ul>
+        <hr class="divisor">
+        <h3>Proceso de selección</h3>
+        <ol>
+          <li>Enviar solicitud.</li>
+          <li>Revisión del perfil.</li>
+          <li>Entrevista.</li>
+          <li>Selección del candidato.</li>
+        </ol>
+        <p id="reportar">¿Ves algo extraño en esta vacante? Repórtala llamando a AMAC al <a href="tel:+528112345678">81 1234 5678</a>.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__contenido">
+      <div>
+        <p class="pie__titulo">¿Necesitas ayuda?</p>
+        <p class="pie__texto">
+          Llámanos al <a class="pie__telefono" href="tel:+528112345678">81 1234 5678</a>,
+          de lunes a viernes de 9:00 a 18:00.
+        </p>
+      </div>
+      <p class="pie__texto">AMAC · Acompañamos nuevas etapas de vida.</p>
+    </div>
+    <a class="boton-ayuda" href="tel:+528112345678">
+      <svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
+      Ayuda <span class="solo-lector">: llamar a AMAC</span>
+    </a>
+  </footer>
+</body>
+</html>
