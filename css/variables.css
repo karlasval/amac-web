@@ -1,0 +1,60 @@
+/* =========================================================
+   variables.css — Design tokens tomados del prototipo de Figma
+   ========================================================= */
+:root {
+  /* Colores */
+  --color-encabezado: #192944;
+  --color-primario: #202945;        /* azul marino: texto y botones oscuros */
+  --color-acento: #ff815c;          /* coral: acción principal */
+  --color-acento-oscuro: #f0663c;   /* coral al pasar el mouse */
+  --color-fondo: #f4fcff;
+  --color-superficie: #ffffff;      /* tarjetas */
+  --color-suave: #cae4ef;           /* azul claro: footer, paneles */
+  --color-texto: #202945;
+  --color-texto-claro: #ffffff;
+  --color-texto-secundario: #4b5563;
+  --color-borde: #c3ceda;
+  --color-borde-campo: #7a8494;
+  --color-foco: #1268b3;
+  --color-error: #b42318;
+
+  /* Estatus (fondo / texto) — contraste ≥ 4.5:1 */
+  --estatus-revision-fondo: #ffefd6;
+  --estatus-revision-texto: #6b4400;
+  --estatus-aceptada-fondo: #ddf3e4;
+  --estatus-aceptada-texto: #14532d;
+  --estatus-rechazada-fondo: #fde2e1;
+  --estatus-rechazada-texto: #8a1c1c;
+  --estatus-pendiente-fondo: #e5ecf6;
+  --estatus-pendiente-texto: #202945;
+  --estatus-cerrada-fondo: #e5e7eb;
+  --estatus-cerrada-texto: #1f2937;
+
+  /* Tipografía */
+  --fuente-titulos: "Baskervville", Georgia, serif;
+  --fuente-base: "Work Sans", system-ui, sans-serif;
+  --texto-base: 1.125rem;   /* 18 px */
+  --texto-chico: 1.125rem;  /* nunca menos de 18 px */
+  --texto-grande: 1.25rem;  /* 20 px */
+  --texto-h3: 1.375rem;     /* 22 px */
+  --texto-h2: 1.625rem;     /* 26 px */
+  --texto-h1: 2rem;         /* 32 px en celular */
+  --texto-h1-escritorio: 3rem; /* 48 px */
+  --interlineado: 1.5;
+
+  /* Espaciados */
+  --espacio-xs: 0.25rem;
+  --espacio-s: 0.5rem;
+  --espacio-m: 1rem;
+  --espacio-l: 1.5rem;
+  --espacio-xl: 2rem;
+  --espacio-xxl: 3rem;
+
+  /* Bordes y tamaños */
+  --radio: 0.625rem;        /* 10 px */
+  --radio-tarjeta: 0.875rem;
+  --radio-pildora: 999px;
+  --alto-control: 3.25rem;  /* 52 px: botones y campos */
+  --ancho-maximo: 75rem;    /* 1200 px */
+  --sombra: 0 0.25rem 0.75rem rgb(0 0 0 / 0.2);
+}

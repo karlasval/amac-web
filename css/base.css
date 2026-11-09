@@ -1,0 +1,125 @@
+/* =========================================================
+   base.css — Reset, tipografía, enlaces y foco
+   ========================================================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fuente-base);
+  font-size: var(--texto-base);
+  line-height: var(--interlineado);
+  color: var(--color-texto);
+  background: var(--color-fondo);
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 var(--espacio-m);
+  line-height: 1.2;
+  color: var(--color-primario);
+}
+
+h1 {
+  font-family: var(--fuente-titulos);
+  font-size: var(--texto-h1);
+}
+
+h2 {
+  font-family: var(--fuente-titulos);
+  font-size: var(--texto-h2);
+}
+
+h3 {
+  font-size: var(--texto-h3);
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 var(--espacio-m);
+}
+
+ul,
+ol {
+  margin: 0 0 var(--espacio-m);
+  padding-left: var(--espacio-l);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--color-primario);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--color-encabezado);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+/* Foco visible para navegar con teclado */
+:focus-visible {
+  outline: 3px solid var(--color-foco);
+  outline-offset: 3px;
+}
+
+/* Enlace "Saltar al contenido" */
+.saltar-contenido {
+  position: absolute;
+  left: -9999px;
+  top: var(--espacio-m);
+  z-index: 100;
+  min-height: 2.75rem;
+  padding: var(--espacio-s) var(--espacio-m);
+  background: var(--color-superficie);
+  color: var(--color-primario);
+  font-weight: 600;
+  border-radius: var(--radio);
+}
+
+.saltar-contenido:focus {
+  left: var(--espacio-m);
+}
+
+/* Texto solo para lectores de pantalla */
+.solo-lector {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: var(--texto-h1-escritorio);
+  }
+}

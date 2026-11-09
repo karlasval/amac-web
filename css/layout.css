@@ -1,0 +1,203 @@
+/* =========================================================
+   layout.css — Encabezado, pie, contenedor y grids
+   Mobile-first: los estilos base son para celular.
+   ========================================================= */
+
+/* ---------- Contenedor ---------- */
+.contenedor {
+  width: 100%;
+  max-width: var(--ancho-maximo);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--espacio-m);
+  padding-right: var(--espacio-m);
+}
+
+main {
+  flex: 1;
+  padding-top: var(--espacio-xl);
+  padding-bottom: 6rem; /* espacio para el botón flotante */
+}
+
+/* ---------- Encabezado ---------- */
+.encabezado {
+  background: var(--color-encabezado);
+  color: var(--color-texto-claro);
+}
+
+.encabezado__contenido {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espacio-m);
+  padding-top: var(--espacio-m);
+  padding-bottom: var(--espacio-m);
+}
+
+.encabezado__logo {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
+
+.encabezado__logo img {
+  width: 10.5rem;
+}
+
+.navegacion {
+  width: 100%;
+}
+
+.navegacion__lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio-s);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navegacion__enlace {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding-left: var(--espacio-s);
+  padding-right: var(--espacio-s);
+  color: var(--color-texto-claro);
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: var(--radio);
+}
+
+.navegacion__enlace:hover,
+.navegacion__enlace[aria-current="page"] {
+  text-decoration: underline;
+}
+
+.encabezado .boton {
+  min-height: 2.75rem;
+}
+
+/* ---------- Pie de página ---------- */
+.pie {
+  background: var(--color-suave);
+  color: var(--color-texto);
+}
+
+.pie__contenido {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+  padding-top: var(--espacio-xl);
+  padding-bottom: var(--espacio-xl);
+}
+
+.pie__titulo {
+  font-family: var(--fuente-base);
+  font-size: var(--texto-grande);
+  font-weight: 600;
+  margin: 0;
+}
+
+.pie__texto {
+  margin: 0;
+}
+
+.pie__telefono {
+  font-weight: 700;
+}
+
+/* ---------- Grids reutilizables ---------- */
+.lista-vacantes,
+.lista-candidatos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espacio-l);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.columnas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espacio-l);
+}
+
+.fila-campos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espacio-m);
+}
+
+.encabezado-seccion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--espacio-s);
+  margin-bottom: var(--espacio-m);
+}
+
+/* Formularios angostos (login, registro) */
+.contenedor-formulario {
+  max-width: 55rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenedor-angosto {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Tablet (768 px) ---------- */
+@media (min-width: 768px) {
+  .lista-vacantes,
+  .lista-candidatos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fila-campos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pie__contenido {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* ---------- Escritorio (1024 px) ---------- */
+@media (min-width: 1024px) {
+  .encabezado__contenido {
+    flex-wrap: nowrap;
+  }
+
+  .navegacion {
+    width: auto;
+  }
+
+  .navegacion__lista {
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .lista-vacantes,
+  .lista-candidatos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .columnas {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  main {
+    padding-top: var(--espacio-xxl);
+    padding-bottom: 6rem;
+  }
+}
