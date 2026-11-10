@@ -155,8 +155,8 @@ en la evaluación móvil de Lighthouse.
 
 ## Publicación
 
-**Repositorio GitHub:** pendiente de agregar URL.  
-**Sitio en Vercel:** pendiente de agregar URL.
+**Repositorio GitHub:** https://github.com/karlasval/amac-web.git  
+**Sitio en Vercel:** https://amac-web-weld.vercel.app/
 
 ---
 
