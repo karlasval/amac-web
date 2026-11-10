@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de empresa | AMAC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:wght@700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <a class="encabezado__logo" href="index.html">
+        <img src="img/logo-amac.svg" alt="AMAC, ir al inicio" width="200" height="48">
+      </a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul class="navegacion__lista">
+          <li><a class="navegacion__enlace" href="index.html">Vacantes</a></li>
+          <li><a class="navegacion__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a class="navegacion__enlace" href="empresa-vacantes.html">Empresas</a></li>
+          <li><a class="boton boton--claro" href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal" class="contenedor">
+    <div class="contenedor-formulario">
+      <h1>Registro de empresa</h1>
+      <p class="subtitulo">Registra tu empresa para publicar vacantes y conocer nuevos candidatos. Los campos con * son obligatorios.</p>
+      <form action="empresa-vacantes.html" method="get">
+        <fieldset class="grupo-campos">
+          <legend>Información de la empresa</legend>
+          <div class="fila-campos">
+            <div class="campo-formulario">
+              <label for="empresa">Nombre de la empresa *</label>
+              <input type="text" id="empresa" autocomplete="organization" required>
+            </div>
+            <div class="campo-formulario">
+              <label for="giro">Giro de la empresa *</label>
+              <select id="giro" required>
+                <option value="">Selecciona una opción</option>
+                <option>Servicios</option>
+                <option>Comercio</option>
+                <option>Industria</option>
+                <option>Otro</option>
+              </select>
+            </div>
+          </div>
+          <div class="fila-campos">
+            <div class="campo-formulario">
+              <label for="rfc">RFC *</label>
+              <input type="text" id="rfc" required aria-describedby="rfc-ayuda">
+              <p class="campo-formulario__ayuda" id="rfc-ayuda">12 o 13 caracteres</p>
+            </div>
+            <div class="campo-formulario">
+              <label for="telefono-empresa">Teléfono de la empresa *</label>
+              <input type="tel" id="telefono-empresa" autocomplete="tel" required>
+            </div>
+          </div>
+            <div class="campo-formulario">
+              <label for="correo-empresa">Correo electrónico *</label>
+              <input type="email" id="correo-empresa" autocomplete="email" required>
+            </div>
+        </fieldset>
+        <fieldset class="grupo-campos">
+          <legend>Dirección de la empresa</legend>
+          <div class="fila-campos">
+            <div class="campo-formulario">
+              <label for="calle-empresa">Calle y número *</label>
+              <input type="text" id="calle-empresa" autocomplete="address-line1" required>
+            </div>
+            <div class="campo-formulario">
+              <label for="colonia-empresa">Colonia *</label>
+              <input type="text" id="colonia-empresa" autocomplete="address-level3" required>
+            </div>
+          </div>
+          <div class="fila-campos">
+            <div class="campo-formulario">
+              <label for="municipio">Municipio o ciudad *</label>
+              <input type="text" id="municipio" autocomplete="address-level2" required>
+            </div>
+            <div class="campo-formulario">
+              <label for="cp">Código postal *</label>
+              <input type="text" id="cp" autocomplete="postal-code" required>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="grupo-campos">
+          <legend>Persona de contacto</legend>
+          <div class="fila-campos">
+            <div class="campo-formulario">
+              <label for="contacto-nombre">Nombre(s) *</label>
+              <input type="text" id="contacto-nombre" autocomplete="given-name" required>
+            </div>
+            <div class="campo-formulario">
+              <label for="contacto-apellido">Apellidos *</label>
+              <input type="text" id="contacto-apellido" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="fila-campos">
+            <div class="campo-formulario">
+              <label for="contacto-telefono">Teléfono de contacto *</label>
+              <input type="tel" id="contacto-telefono" autocomplete="tel" required>
+            </div>
+            <div class="campo-formulario">
+              <label for="contacto-correo">Correo de contacto *</label>
+              <input type="email" id="contacto-correo" autocomplete="email" required>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="grupo-campos">
+          <legend>Imagen de la empresa</legend>
+          <div class="fila-campos">
+            <div class="campo-formulario">
+              <label for="logo">Logo (opcional)</label>
+              <input type="file" id="logo" aria-describedby="logo-ayuda">
+              <p class="campo-formulario__ayuda" id="logo-ayuda">PNG o JPG</p>
+            </div>
+            <div class="campo-formulario">
+              <label for="banner">Banner (opcional)</label>
+              <input type="file" id="banner" aria-describedby="banner-ayuda">
+              <p class="campo-formulario__ayuda" id="banner-ayuda">PNG o JPG</p>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="grupo-campos">
+          <legend>Seguridad de la cuenta</legend>
+          <div class="fila-campos">
+            <div class="campo-formulario">
+              <label for="contrasena-empresa">Contraseña *</label>
+              <input type="password" id="contrasena-empresa" autocomplete="new-password" required aria-describedby="contrasena-empresa-ayuda">
+              <p class="campo-formulario__ayuda" id="contrasena-empresa-ayuda">Mínimo 8 caracteres</p>
+            </div>
+            <div class="campo-formulario">
+              <label for="confirmar-empresa">Confirmar contraseña *</label>
+              <input type="password" id="confirmar-empresa" autocomplete="new-password" required>
+            </div>
+          </div>
+        </fieldset>
+        <div class="pila">
+          <label class="opcion"><input type="checkbox" name="terminos" value="si" required> He leído y acepto los términos y condiciones.</label>
+          <label class="opcion"><input type="checkbox" name="privacidad" value="si" required> He leído y acepto el aviso de privacidad.</label>
+          <button class="boton boton--primario boton--ancho" type="submit">Crear cuenta de empresa</button>
+          <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__contenido">
+      <div>
+        <p class="pie__titulo">¿Necesitas ayuda?</p>
+        <p class="pie__texto">
+          Llámanos al <a class="pie__telefono" href="tel:+528112345678">81 1234 5678</a>,
+          de lunes a viernes de 9:00 a 18:00.
+        </p>
+      </div>
+      <p class="pie__texto">AMAC · Acompañamos nuevas etapas de vida.</p>
+    </div>
+    <a class="boton-ayuda" href="tel:+528112345678">
+      <svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
+      Ayuda <span class="solo-lector">: llamar a AMAC</span>
+    </a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de sesión | AMAC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:wght@700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <a class="encabezado__logo" href="index.html">
+        <img src="img/logo-amac.svg" alt="AMAC, ir al inicio" width="200" height="48">
+      </a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul class="navegacion__lista">
+          <li><a class="navegacion__enlace" href="index.html">Vacantes</a></li>
+          <li><a class="navegacion__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a class="navegacion__enlace" href="empresa-vacantes.html">Empresas</a></li>
+          <li><a class="boton boton--claro" href="login.html" aria-current="page">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal" class="contenedor">
+    <div class="acceso">
+      <div class="panel-marca">
+        <img src="img/logo-amac.svg" alt="" width="200" height="48">
+        <p class="panel-marca__titulo">Envejecer es <span class="panel-marca__resalte">vivir.</span></p>
+        <p>Trabajamos para impulsar un cambio cultural y promover el buen envejecimiento.</p>
+        <ul class="panel-marca__valores">
+          <li class="panel-marca__valor"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> Vejez saludable</li>
+          <li class="panel-marca__valor"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9 7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7"/></svg> Vejez activa</li>
+          <li class="panel-marca__valor"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg> Empoderamiento</li>
+        </ul>
+        <p class="panel-marca__lema">Acompañamos nuevas etapas de vida.</p>
+      </div>
+
+      <div class="contenedor-angosto">
+        <h1>Inicio de sesión</h1>
+        <p class="subtitulo">Entra a tu cuenta para postularte a vacantes.</p>
+        <form class="tarjeta" action="index.html" method="get">
+          <div class="pila">
+            <div class="campo-formulario">
+              <label for="usuario">Correo electrónico o celular</label>
+              <input type="text" id="usuario" autocomplete="username" required aria-describedby="usuario-ayuda">
+              <p class="campo-formulario__ayuda" id="usuario-ayuda">Ejemplo: nombre@correo.com</p>
+            </div>
+            <div class="campo-formulario">
+              <label for="contrasena">Contraseña</label>
+              <input type="password" id="contrasena" autocomplete="current-password" required>
+            </div>
+            <button class="boton boton--primario boton--ancho" type="submit">Iniciar sesión</button>
+            <a class="boton boton--enlace" href="#ayuda-contrasena">¿Olvidaste tu contraseña?</a>
+          </div>
+        </form>
+        <p id="ayuda-contrasena">Si olvidaste tu contraseña, llama a AMAC al <a href="tel:+528112345678">81 1234 5678</a> y te ayudamos a recuperarla.</p>
+
+        <p class="separador">O inicia sesión con</p>
+        <div class="dos-columnas">
+          <button class="boton boton--oscuro" type="button"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.24 10.29v3.48h4.9c-.2 1.25-1.47 3.67-4.9 3.67-2.95 0-5.36-2.44-5.36-5.45s2.41-5.45 5.36-5.45c1.68 0 2.8.72 3.45 1.33l2.35-2.27C16.53 4.2 14.58 3.3 12.24 3.3 7.45 3.3 3.57 7.18 3.57 12s3.88 8.7 8.67 8.7c5 0 8.32-3.52 8.32-8.47 0-.57-.06-1-.14-1.44h-8.18z"/></svg> Google</button>
+          <button class="boton boton--oscuro" type="button"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg> Facebook</button>
+        </div>
+
+        <h2 class="separador">¿No tienes cuenta?</h2>
+        <div class="dos-columnas">
+          <a class="boton boton--secundario" href="registro-candidato.html">Soy candidato</a>
+          <a class="boton boton--secundario" href="registro-empresa.html">Soy empresa</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__contenido">
+      <div>
+        <p class="pie__titulo">¿Necesitas ayuda?</p>
+        <p class="pie__texto">
+          Llámanos al <a class="pie__telefono" href="tel:+528112345678">81 1234 5678</a>,
+          de lunes a viernes de 9:00 a 18:00.
+        </p>
+      </div>
+      <p class="pie__texto">AMAC · Acompañamos nuevas etapas de vida.</p>
+    </div>
+    <a class="boton-ayuda" href="tel:+528112345678">
+      <svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
+      Ayuda <span class="solo-lector">: llamar a AMAC</span>
+    </a>
+  </footer>
+</body>
+</html>

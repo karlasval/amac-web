@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de candidato | AMAC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baskervville:wght@700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <a class="encabezado__logo" href="index.html">
+        <img src="img/logo-amac.svg" alt="AMAC, ir al inicio" width="200" height="48">
+      </a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul class="navegacion__lista">
+          <li><a class="navegacion__enlace" href="index.html">Vacantes</a></li>
+          <li><a class="navegacion__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+          <li><a class="navegacion__enlace" href="empresa-vacantes.html">Empresas</a></li>
+          <li><a class="boton boton--claro" href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="principal" class="contenedor">
+    <div class="contenedor-formulario">
+      <h1>Crear cuenta</h1>
+      <p class="subtitulo">Regístrate para encontrar oportunidades laborales. Los campos con * son obligatorios.</p>
+      <form action="login.html" method="get">
+        <fieldset class="grupo-campos">
+          <legend>Datos personales</legend>
+          <div class="fila-campos">
+            <div class="campo-formulario">
+              <label for="nombre">Nombre(s) *</label>
+              <input type="text" id="nombre" autocomplete="given-name" required>
+            </div>
+            <div class="campo-formulario">
+              <label for="apellido-paterno">Apellido paterno *</label>
+              <input type="text" id="apellido-paterno" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div class="fila-campos">
+            <div class="campo-formulario">
+              <label for="apellido-materno">Apellido materno</label>
+              <input type="text" id="apellido-materno">
+            </div>
+            <div class="campo-formulario">
+              <label for="edad">Edad *</label>
+              <input type="number" id="edad" required>
+            </div>
+          </div>
+          <div class="fila-campos">
+            <div class="campo-formulario">
+              <label for="sexo">Sexo *</label>
+              <select id="sexo" required>
+                <option value="">Selecciona una opción</option>
+                <option>Mujer</option>
+                <option>Hombre</option>
+                <option>Prefiero no decirlo</option>
+              </select>
+            </div>
+            <div class="campo-formulario">
+              <label for="estudios">Nivel máximo de estudios *</label>
+              <select id="estudios" required>
+                <option value="">Selecciona una opción</option>
+                <option>Primaria</option>
+                <option>Secundaria</option>
+                <option>Preparatoria</option>
+                <option>Técnico</option>
+                <option>Licenciatura</option>
+                <option>Posgrado</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="grupo-campos">
+          <legend>Dirección</legend>
+          <div class="fila-campos">
+            <div class="campo-formulario">
+              <label for="calle">Calle y número *</label>
+              <input type="text" id="calle" autocomplete="address-line1" required>
+            </div>
+            <div class="campo-formulario">
+              <label for="colonia">Colonia *</label>
+              <input type="text" id="colonia" autocomplete="address-level3" required>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="grupo-campos">
+          <legend>Datos de contacto</legend>
+          <p>Escribe al menos uno: correo o celular.</p>
+          <div class="fila-campos">
+            <div class="campo-formulario">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" autocomplete="email">
+            </div>
+            <div class="campo-formulario">
+              <label for="celular">Teléfono celular</label>
+              <input type="tel" id="celular" autocomplete="tel" aria-describedby="celular-ayuda">
+              <p class="campo-formulario__ayuda" id="celular-ayuda">10 números, sin espacios</p>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="grupo-campos">
+          <legend>Medio de contacto preferido</legend>
+          <label class="opcion"><input type="radio" name="medio" value="correo" checked> Correo electrónico</label>
+          <label class="opcion"><input type="radio" name="medio" value="celular"> Teléfono celular</label>
+        </fieldset>
+        <fieldset class="grupo-campos">
+          <legend>Experiencia y habilidades</legend>
+            <div class="campo-formulario">
+              <label for="experiencia">Experiencia laboral</label>
+              <textarea id="experiencia" aria-describedby="experiencia-ayuda"></textarea>
+              <p class="campo-formulario__ayuda" id="experiencia-ayuda">Cuéntanos en qué has trabajado y por cuánto tiempo.</p>
+            </div>
+            <div class="campo-formulario">
+              <label for="habilidades">Habilidades *</label>
+              <input type="text" id="habilidades" required aria-describedby="habilidades-ayuda">
+              <p class="campo-formulario__ayuda" id="habilidades-ayuda">Ejemplo: puntualidad, atención al cliente, manejo de caja</p>
+            </div>
+            <div class="campo-formulario">
+              <label for="cv">Adjuntar CV (opcional)</label>
+              <input type="file" id="cv" aria-describedby="cv-ayuda">
+              <p class="campo-formulario__ayuda" id="cv-ayuda">Archivo PDF o Word, máximo 5 MB</p>
+            </div>
+        </fieldset>
+        <fieldset class="grupo-campos">
+          <legend>Seguridad</legend>
+          <div class="fila-campos">
+            <div class="campo-formulario">
+              <label for="contrasena">Contraseña *</label>
+              <input type="password" id="contrasena" autocomplete="new-password" required aria-describedby="contrasena-ayuda">
+              <p class="campo-formulario__ayuda" id="contrasena-ayuda">Mínimo 8 caracteres</p>
+            </div>
+            <div class="campo-formulario">
+              <label for="confirmar">Confirmar contraseña *</label>
+              <input type="password" id="confirmar" autocomplete="new-password" required>
+            </div>
+          </div>
+        </fieldset>
+        <div class="pila">
+          <label class="opcion"><input type="checkbox" name="terminos" value="si" required> He leído y acepto los términos y condiciones.</label>
+          <label class="opcion"><input type="checkbox" name="privacidad" value="si" required> He leído y acepto el aviso de privacidad.</label>
+          <button class="boton boton--primario boton--ancho" type="submit">Crear cuenta</button>
+          <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__contenido">
+      <div>
+        <p class="pie__titulo">¿Necesitas ayuda?</p>
+        <p class="pie__texto">
+          Llámanos al <a class="pie__telefono" href="tel:+528112345678">81 1234 5678</a>,
+          de lunes a viernes de 9:00 a 18:00.
+        </p>
+      </div>
+      <p class="pie__texto">AMAC · Acompañamos nuevas etapas de vida.</p>
+    </div>
+    <a class="boton-ayuda" href="tel:+528112345678">
+      <svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>
+      Ayuda <span class="solo-lector">: llamar a AMAC</span>
+    </a>
+  </footer>
+</body>
+</html>
