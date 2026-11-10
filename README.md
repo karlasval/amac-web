@@ -5,7 +5,7 @@ Proyecto final de **Desarrollo de Aplicaciones Web · UDEM · OT2026**
 
 Este proyecto consiste en la maquetación de la plataforma de empleo AMAC, diseñada para facilitar que las personas adultas mayores encuentren oportunidades laborales. Las páginas se basan en nuestro prototipo de Figma y están desarrolladas con HTML semántico y CSS responsivo, considerando la accesibilidad y la facilidad de uso.
 
-**Sitio publicado en Vercel:** Pendiente de agregar URL.
+**Sitio publicado en Vercel:** https://amac-web-weld.vercel.app/
 
 ## Integrantes y distribución del trabajo
 
@@ -138,16 +138,20 @@ No es necesario instalar React, Bootstrap, Tailwind ni un servidor de base de da
 
 ## Evidencias de la entrega
 
-Una vez tomadas y agregadas las capturas a `img/`, se mostrarán en los siguientes espacios:
+### Versión de escritorio (1440 px)
 
-**Pantalla de inicio en celular**  
-_Pendiente: agregar `img/captura-celular.png`._
+![AMAC - Versión de escritorio](img/captura-escritorio.png)
 
-**Pantalla de inicio en escritorio**  
-_Pendiente: agregar `img/captura-escritorio.png`._
+### Versión móvil (375 px)
 
-**Lighthouse — Accessibility**  
-_Pendiente: agregar `img/captura-lighthouse.png` y documentar el puntaje obtenido._
+![AMAC - Versión móvil](img/captura-celular.png)
+
+### Lighthouse - Accessibility
+
+La página principal obtuvo 100/100 en Accessibility
+en la evaluación móvil de Lighthouse.
+
+![Lighthouse Accessibility 100/100](img/captura-lighthouse.png)
 
 ## Publicación
 
